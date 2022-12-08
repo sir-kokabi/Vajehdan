@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <OutputType>WinExe</OutputType>        
+        <TargetCulture>fa-IR</TargetCulture>
+        <ProductName>واژه‌دان</ProductName>
+        <PublisherName>سیدیوب کوکبی</PublisherName>      
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+        <Version>5.4.2</Version>
+        <AssemblyVersion>5.4.2</AssemblyVersion>
+        <FileVersion>5.4.2</FileVersion>        
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>        
+    </PropertyGroup>    
+    
+    <ItemGroup>
+        <Compile Remove="obj\**" />
+        <EmbeddedResource Remove="obj\**" />
+        <None Remove="obj\**" />
+        <Page Remove="obj\**" />
+        
+        <PackageReference Include="Ben.Demystifier" Version="0.4.1" />
+        <PackageReference Include="GlobalHotKeyCore" Version="1.2.0" />
+        <PackageReference Include="H.NotifyIcon.Wpf" Version="2.0.64" />
+        <PackageReference Include="Octokit" Version="2.0.1" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Black.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Bold.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-ExtraBold.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-ExtraLight.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Light.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Medium.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Regular.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-SemiBold.ttf" />
+        <Resource Include="Resources\Fonts\Vazirmatn-UI-FD-Thin.ttf" />
+        <Resource Include="Resources\logo.ico" />
+        
+        <Compile Remove="Resources\WindowStyle.cs" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Black.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Bold.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-ExtraBold.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-ExtraLight.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Light.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Medium.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Regular.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-SemiBold.ttf" />
+        
+        <None Remove="Resources\Fonts\Vazirmatn-UI-FD-Thin.ttf" />
+
+        <Compile Update="Properties\Resources.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        
+        <Compile Update="Properties\Settings.Designer.cs">
+            <DesignTimeSharedInput>True</DesignTimeSharedInput>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Settings.settings</DependentUpon>
+        </Compile>
+        
+        <EmbeddedResource Update="Properties\Resources.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        
+        <None Update="Properties\Settings.settings">
+            <Generator>PublicSettingsSingleFileGenerator</Generator>
+            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+        </None>
+    </ItemGroup>
+</Project>
