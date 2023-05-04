@@ -17,14 +17,3 @@
 [پوست نوشتن+واژه‌یار](https://shahinkalantari.com/%d9%be%d9%88%d8%b3%d8%aa-%d9%86%d9%88%d8%b4%d8%aa%d9%86/)
 
 [از اطلاعات در مورد شرکت ها تا حق فراموشی و واژه دان و کافینه برای دونیت و کلی چیز دیگه](https://jadi.net/2022/01/mondays-00-09/)
-
-## Contributors
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
